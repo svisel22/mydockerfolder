@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>hello</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+          <li><a href="hello.html">Home</a></li>
+          <li><a href="titanic.html">Titanic</a></li>
+          <li><a href="https://github.com/svisel22/">Github About</a></li>
+        </ul>
+    </nav>      
+    <main>
+        <h1>I have been seen {{ count }} times.</h1>
+        <ul>
+            {% for i in range(1, count+1) %}
+            <li>{{ i }}: Hello {{ name }}! </li>
+            {% endfor %}
+        </ul>
+        <p>
+            this is a link to the <a href="https://www.hwr-berlin.de/studium/studiengaenge/detail/13-business-intelligence-and-process-management/">bipm master on the hwr website</a>
+            <img src="https://images.unsplash.com/photo-1682687981715-fa2ff72bd87d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="funny image">       
+        </p>
+    </main>
+    <footer>Joana</footer>
+</body>
+
+</html>
