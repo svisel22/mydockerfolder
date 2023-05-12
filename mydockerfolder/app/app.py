@@ -2,11 +2,11 @@ import time
 import redis
 from flask import Flask, render_template
 import os
-from dotenv import load_dotenv
 import pandas as pd
 import matplotlib.pyplot as plt
+#from dotenv import load_dotenv
 
-load_dotenv() 
+#load_dotenv() 
 cache = redis.Redis(host=os.getenv('REDIS_HOST'), port=6379,  password=os.getenv('REDIS_PASSWORD'))
 app = Flask(__name__)
 
@@ -23,7 +23,8 @@ def get_hit_count():
 
 
 # read CSV data into a DataFrame
-df = pd.read_csv('C:/Users/joana/mydockerfolder/app/TitanicTrain.csv') 
+df = pd.read_csv('app/TitanicTrain.csv') 
+
 # generate an HTML table from the DataFrame
 html_table = df.to_html()
 
