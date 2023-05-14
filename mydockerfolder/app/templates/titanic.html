@@ -11,14 +11,16 @@
 <body>
     <nav>
         <ul>
-          <li><a href="hello.html">Home</a></li>
-          <li><a href="titanic.html">Titanic</a></li>
-          <li><a href="https://github.com/svisel22/">Github About</a></li>
+            <li><a href="http://localhost:4000/">Home</a></li>
+            <li><a href="http://localhost:4000/titanic">Titanic</a></li>
+            <li><a href="https://github.com/svisel22/">Github About</a></li>
         </ul>
     </nav>      
     <main>
         <h1>Titanic raising.</h1>
-    </main>
+        <h2>This is my barchart </h2>
+        <img src="{{ url_for('static', filename=chart_image) }}" alt="Bar Chart">
+    </main>    
     <footer>Joana</footer>
 </body>
 

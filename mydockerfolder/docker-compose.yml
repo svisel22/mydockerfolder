@@ -16,3 +16,8 @@ services:
     environment:
       - REDIS_PASSWORD=${REDIS_PASSWORD}
       - REDIS_HOST=${REDIS_HOST}
+  # busybox:
+  #   image: busybox
+  #   command: '/bin/sh -c "echo $$REDIS_PASSWORD"'
+  #   environment:
+  #     REDIS_PASSWORD: ${REDIS_PASSWORD}
